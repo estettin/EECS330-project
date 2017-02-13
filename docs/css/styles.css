@@ -113,8 +113,16 @@ color: white !important;
 text-decoration: none;
 }
 
+span.link {
+font-family: 'Lobster', cursive !important;
+font-size: 50px;
+color: white !important;
+text-decoration: none;
+}
+
 a {
 	text-decoration: none !important;
+  color: #ffffff;
 }
 
 .circle {
@@ -133,12 +141,28 @@ a {
   /* margin-top: -120px; */
   margin-left: -150px;
 }
-.circle span {
+.circle span.text {
   display: inline-block;
   transform: rotate(-45deg) translate(-50px, 70px);
   font-size: 2em;
   font-family: 'Raleway', sans-serif !important;
   color: #ffffff;
+}
+
+.circle span i {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.circle span:hover i {
+  -webkit-transform: translateX(4px);
+  transform: translateX(4px);
 }
 
 .progress {
