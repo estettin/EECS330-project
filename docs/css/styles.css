@@ -107,17 +107,17 @@ h1.initial {
 	font-family: 'Raleway', sans-serif !important;
 }
 a.link {
-font-family: 'Lobster', cursive !important;
-font-size: 50px;
-color: white !important;
-text-decoration: none;
+  font-family: 'Lobster', cursive !important;
+  font-size: 50px;
+  color: white !important;
+  text-decoration: none;
 }
 
 span.link {
-font-family: 'Lobster', cursive !important;
-font-size: 50px;
-color: white !important;
-text-decoration: none;
+  font-family: 'Lobster', cursive !important;
+  font-size: 50px;
+  color: white !important;
+  text-decoration: none;
 }
 
 a {
@@ -139,7 +139,7 @@ a {
   /* top: 50%; */
   left: 50%;
   /* margin-top: -120px; */
-  margin-left: -150px;
+  margin-left: -181.5px;
 }
 .circle span.text {
   display: inline-block;
