@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Dashboard</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/materialize.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo left">Degree Dashboard</a>
+            <a href="#" data-activates="mobile-demo" class="right button-collapse"><i class="fa fa-bars"></i></a>
+            <ul class="right hide-on-small-and-down">
+                <li id="navsearch">
+                    <form class="nav-search">
+                        <label class="search-label" for="search"><i class="fa fa-search"></i></label>
+                        <input id="search" type="search" placeholder="search courses...">
+                    </form>
+                </li>
+                <li><a href="collapsible.html">Requirements</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li><a href="collapsible.html">Requirements</a></li>
+                <li><a href="mobile.html">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h2>Computer Science, B.S.</h2>
+            </div>
+            <div class="col s9">
+                <div class="progress">
+                    <div class="progress">
+                        <div class="progress-bar green" style="width: 41.67%" title="20 Credits Completed">
+                        </div>
+                        <div class="progress-bar yellow" style="width: 8.33%" title="4 Credits in Progress">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s3">
+                <h6>24/48 Credits<i class="fa fa-graduation-cap"></i></h6>
+            </div>
+            <div class="col s12">
+                <div class="color-key">
+                    <div class="key green"></div>
+                    <div class="key-label">Complete</div>
+                    <div class="key yellow"></div>
+                    <div class="key-label">In Progress</div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h3>Degree Requirements</h3>
+        <div class="row no-margin-bottom">
+            <div class="col s12">
+                <h5>Math</h5>
+                <div class="row row-eq-height">
+                    <div class="col s9 vcenter">
+                        <div class="progress">
+                            <div class="progress-bar green last" style="width: 100%" title="EA 1, EA 2, EA 3, EECS 111">
+                                <span class="sr-only">4 Credits Complete</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s3 vcenter">
+                        <h6>4/4 Credits</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row no-margin-bottom">
+            <div class="col s12">
+                <h5>Engineering Analysis</h5>
+                <div class="row row-eq-height">
+                    <div class="col s9 vcenter">
+                        <div class="progress">
+                            <div class="progress-bar green last" style="width: 100%" title="EA 1, EA 2, EA 3, EECS 111">
+                                <span class="sr-only">4 Credits Complete</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s3 vcenter">
+                        <h6>4/4 Credits</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row no-margin-bottom">
+            <div class="col s12">
+                <h5>Basic Science</h5>
+                <div class="row row-eq-height">
+                    <div class="col s9 vcenter">
+                        <div class="progress">
+                            <div class="progress-bar yellow" style="width: 25%" title="Physics 135-2">
+                                <span class="sr-only">1 Credits Complete</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s3 vcenter">
+                        <h6>1/4 Credits</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row no-margin-bottom">
+            <div class="col s12">
+                <h5>Design and Communication</h5>
+                <div class="row row-eq-height">
+                    <div class="col s9 vcenter">
+                        <div class="progress">
+                            <div class="progress-bar green last" style="width: 100%" title="DTC 1, DTC 2, GEN_CMN 102">
+                                <span class="sr-only">3 Credits Complete</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s3 vcenter">
+                        <h6>3/3 Credits</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row no-margin-bottom">
+            <div class="col s12">
+                <h5>Basic Science</h5>
+                <div class="row row-eq-height">
+                    <div class="col s9 vcenter">
+                        <div class="progress">
+                            <div class="progress-bar green" style="width: 60%" title="EECS 211, IEMS 326, EECS 203">
+                                <span class="sr-only">3 Credits Complete</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s3 vcenter">
+                        <h6>3/5 Credits</h6></div>
+                </div>
+            </div>
+        </div>
+        <div class="row no-margin-bottom">
+            <div class="col s12">
+                <h5>CS Major Requirements</h5>
+                <div class="row row-eq-height">
+                    <div class="col s9 vcenter">
+                        <div class="progress">
+                            <div class="progress-bar green" style="width: 66.66%" title="EECS 213, EECS 214">
+                                <span class="sr-only">2 Credits Complete</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s3 vcenter">
+                        <h6>2/3 Credits</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row no-margin-bottom">
+            <div class="col s12">
+                <h5>CS Breadth</h5>
+                <div class="row row-eq-height">
+                    <div class="col s9 vcenter">
+                        <div class="progress">
+                            <div class="progress-bar green" style="width: 20%" title="EECS 348">
+                                <span class="sr-only">1 Credit Complete</span>
+                            </div>
+                            <div class="progress-bar yellow" style="width: 20%" title="EECS 330">
+                                <span class="sr-only">1 Credit in Progress</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s3 vcenter">
+                        <h6>2/5 Credits</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row no-margin-bottom">
+            <div class="col s12">
+                <h5>CS Depth</h5>
+                <div class="row row-eq-height">
+                    <div class="col s9 vcenter">
+                        <div class="progress">
+                            <div class="progress-bar green" style="width: 0%" title="">
+                                <span class="sr-only">0 Credits Complete</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s3 vcenter">
+                        <h6>0/5 Credits</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row no-margin-bottom">
+            <div class="col s12">
+                <h5>CS Project Requirement</h5>
+                <div class="row row-eq-height">
+                    <div class="col s9 vcenter">
+                        <div class="progress">
+                            <div class="progress-bar green" style="width: 0%" title="">
+                                <span class="sr-only">0 Credits Complete</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s3 vcenter">
+                        <h6>0/2 Credits</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row no-margin-bottom">
+            <div class="col s12">
+                <h5>Theme</h5>
+                <div class="row row-eq-height">
+                    <div class="col s9 vcenter">
+                        <div class="progress">
+                            <div class="progress-bar green" style="width: 0%" title="">
+                                <span class="sr-only">0 Credits Complete</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s3 vcenter">
+                        <h6>0/7 Credits</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row no-margin-bottom">
+            <div class="col s12">
+                <h5>Unrestricted</h5>
+                <div class="row row-eq-height">
+                    <div class="col s9 vcenter">
+                        <div class="progress">
+                            <div class="progress-bar green" style="width: 40%" title="ART 125, EECS 1XX">
+                                <span class="sr-only">2 Credits Complete</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s3 vcenter">
+                        <h6>2/5 Credits</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
