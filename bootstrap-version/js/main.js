@@ -1,7 +1,7 @@
-$(document).ready(function() {
-    $(function() {
-        $('[data-toggle="tooltip"]').tooltip()
-    });
+// $(document).ready(function() {
+//     $(function() {
+//         $('[data-toggle="tooltip"]').tooltip()
+//     });
 
-    $('.scroll-click').navScroll();
-});
+//     $('.scroll-click').navScroll();
+// });
