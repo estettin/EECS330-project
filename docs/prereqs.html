@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prerequisites</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.18.1/vis.min.js"></script>
+    <!--<script type="text/javascript" src="js/vis-4.18.1/dist/vis.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/materialize.css" rel="stylesheet">
+    <!--<link href="js/vis-4.18.1/dist/vis-network.min.css" rel="stylesheet" type="text/css"/>-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.18.1/vis.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet">
+    <style type="text/css">
+        
+    </style>
+</head>
+
+<body>
+	<nav>
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo left">Prerequisites</a>
+            <a href="#" data-activates="mobile-demo" class="right button-collapse"><i class="fa fa-bars"></i></a>
+            <ul class="right hide-on-small-and-down">
+                <li id="navsearch">
+                    <form class="nav-search">
+                        <label class="search-label" for="search"><i class="fa fa-search"></i></label>
+                        <input id="search" type="search" placeholder="search courses...">
+                    </form>
+                </li>
+                <li><a href="collapsible.html">Requirements</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li><a href="collapsible.html">Requirements</a></li>
+                <li><a href="mobile.html">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h2>Browse Prerequisites</h2>
+            </div>
+        </div>
+        <div class="row">
+			<a class="col s12 link" id="course-link" target="_blank">NAME HERE</a>
+		</div>
+        <div class="row">
+			<div id="mynetwork" class="col s12"></div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+    // create an array with nodes
+    var nodes = new vis.DataSet([
+        {id: 1, label: '111', value: 'FUNDAMENTALS OF COMPUTER PROGRAMMING I'},
+        {id: 2, label: '211', value: 'FUNDAMENTALS OF COMPUTER PROGRAMMING II'},
+        {id: 3, label: '212', value: 'MATHEMATICAL FOUNDATIONS OF COMPUTER SCIENCE'},
+        {id: 4, label: '213', value: 'INTRO TO COMPUTER SYSTEMS'},
+        {id: 5, label: '214', value: 'DATA STRUCTURES AND DATA MANAGEMENT'},
+        {id: 6, label: '321', value: 'PROGRAMMING LANGUAGES'},
+        {id: 7, label: '322', value: 'COMPILER CONSTRUCTION'},
+        {id: 8, label: '325', value: 'ARTIFICIAL INTELLIGENCE PROGRAMMING'},
+        {id: 9, label: '330', value: 'HUMAN COMPUTER INTERACTION'},
+        {id: 10, label: '335', value: 'INTRO TO THE THEORY OF COMPUTATION'},
+        {id: 11, label: '336', value: 'DESIGN & ANALYSIS OF ALGORITHMS'},
+        {id: 12, label: '339', value: 'INTRO TO DATABASES'},
+        {id: 13, label: '340', value: 'INTRODUCTION TO COMPUTER NETWORKING'},
+        {id: 14, label: '343', value: 'OPERATING SYSTEMS'},
+        {id: 15, label: '345', value: 'DISTRIBUTED SYSTEMS'},
+        {id: 16, label: '348', value: 'INTRO TO ARTIFICIAL INTELLIGENCE'},
+        {id: 17, label: '344', value: 'DESIGN OF PROBLEM SOLVERS'},
+        {id: 18, label: '349', value: 'MACHINE LEARNING'}
+    ]);
+
+    // create an array with edges
+    var edges = new vis.DataSet([
+    	{from: 1, to: 2},
+        {from: 1, to: 3},
+        {from: 2, to: 4},
+        {from: 2, to: 5},
+        {from: 5, to: 6},
+        {from: 6, to: 7},
+        {from: 1, to: 8},
+        {from: 2, to: 9},
+        {from: 3, to: 10},
+        {from: 3, to: 11},
+        {from: 2, to: 11},
+        {from: 5, to: 12},
+        {from: 4, to: 12},
+        {from: 5, to: 13},
+        {from: 4, to: 13},
+        {from: 5, to: 14},
+        {from: 4, to: 14},
+        {from: 13, to: 15},
+        {from: 14, to: 15},
+        {from: 16, to: 17},
+        {from: 5, to: 16},
+        {from: 5, to: 18}
+    ]);
+
+    // create a network
+    var container = document.getElementById('mynetwork');
+
+    // provide the data in the vis format
+    var data = {
+        nodes: nodes,
+        edges: edges
+    };
+    var options = {
+        layout: {
+            hierarchical: {
+                direction: "LR",
+                sortMethod: "directed"
+            }
+        },
+        interaction: {
+        	//dragNodes: false,
+        	//navigationButtons : true,
+        	tooltipDelay: 0
+        },
+        nodes: {
+        	shape: "box",
+        	font: {
+                size: 30,
+                color: '#ffffff',
+                face: 'Raleway'
+            },
+            color: {
+            	border: '#511f8e',
+            	background: '#513475',
+            	highlight: {
+            		border: '#511f8e',
+            		background: '#8137dd'
+            	}
+            },
+            borderWidth: 2,
+            borderWidthSelected: 3
+        }
+    };
+
+    var network = new vis.Network(container, data, options);
+
+    network.on('selectNode', function(params) {
+	    var fit_options ={
+	    	nodes: params.nodes,
+	    	animation: { 
+	    		duration: 300,
+	    		easingFunction: "easeInOutQuad"
+	    	}
+    	};
+    	network.fit(fit_options);
+    	var courseLink = document.getElementById('course-link');
+    	courseLink.style.visibility = "visible"
+    	var courseNum = this.body.data.nodes._data[params.nodes[0]].label;
+    	courseLink.href = 'https://www.mccormick.northwestern.edu/eecs/courses/descriptions/' + courseNum + '.html';
+    	var courseName = this.body.data.nodes._data[params.nodes[0]].value;
+    	courseLink.innerHTML = courseName + ' <i class="fa fa-chevron-right" aria-hidden="true"></i>';
+    });
+
+</script>
+</body>
+</html>

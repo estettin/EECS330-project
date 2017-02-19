@@ -281,3 +281,36 @@ hr {
 
 }
 
+/* FOR PREREQS PAGE */
+
+#mynetwork {
+    max-width: 1000px;
+    height: 400px;
+    border: 1px solid lightgray;
+    background-color: #222222;
+}
+.div-tooltip {
+    color: red;
+}
+
+#course-link {
+    visibility: hidden;
+}
+
+#course-link i {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+#course-link:hover i{
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
+}
+
+
