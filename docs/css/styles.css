@@ -312,5 +312,18 @@ hr {
     -webkit-transform: translateX(4px);
     transform: translateX(4px);
 }
+.collapsible {
+    border: none;
+    margin: none;
+}
+.collapsible-body {
+    padding: 0;
+    border: none;
+}
 
+.collapsible-body .collection-item {
+   padding: 0.25em;
+   border: none;
+   margin: none;
+}
 
