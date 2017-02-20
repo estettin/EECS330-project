@@ -22,9 +22,9 @@
 </head>
 
 <body>
-	<nav>
+    <nav>
         <div class="nav-wrapper">
-            <a href="index.html" class="brand-logo left">Prerequisites</a>
+            <a href="index.html" class="brand-logo left">gEECS</a>
             <a href="#" data-activates="mobile-demo" class="right button-collapse"><i class="fa fa-bars"></i></a>
             <ul class="right hide-on-small-and-down">
                 <li id="navsearch">
@@ -34,10 +34,12 @@
                     </form>
                 </li>
                 <li><a href="collapsible.html">Requirements</a></li>
+                <li><a href="prereqs.html">Prerequisites</a></li>
                 <li><a href="#">Logout</a></li>
             </ul>
             <ul class="side-nav" id="mobile-demo">
                 <li><a href="collapsible.html">Requirements</a></li>
+                <li><a href="prereqs.html">Prerequisites</a></li>
                 <li><a href="mobile.html">Logout</a></li>
             </ul>
         </div>
@@ -118,7 +120,8 @@
         layout: {
             hierarchical: {
                 direction: "LR",
-                sortMethod: "directed"
+                sortMethod: "directed",
+                levelSeparation: 250
             }
         },
         interaction: {
@@ -135,7 +138,7 @@
             },
             color: {
             	border: '#511f8e',
-            	background: '#513475',
+            	background: '#341255',//'#513475',
             	highlight: {
             		border: '#511f8e',
             		background: '#8137dd'
@@ -143,14 +146,19 @@
             },
             borderWidth: 2,
             borderWidthSelected: 3
+        },
+        edges: {
+        	selectionWidth: 5
         }
     };
 
     var network = new vis.Network(container, data, options);
 
     network.on('selectNode', function(params) {
+    	var focusNodes = network.getConnectedNodes(params.nodes[0]);
+    	focusNodes.push(params.nodes[0]);
 	    var fit_options ={
-	    	nodes: params.nodes,
+	    	nodes: focusNodes,
 	    	animation: { 
 	    		duration: 300,
 	    		easingFunction: "easeInOutQuad"
