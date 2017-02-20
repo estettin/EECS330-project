@@ -7,5 +7,7 @@ $(document).ready(function() {
      		$(this).hide();
      
      });
+
+     $('.collapsible').collapsible();
      
 });
