@@ -157,10 +157,14 @@ a {
 
 .no-margin {
     margin: 0 !important;
+   
+
 }
 
 .no-margin-bottom {
     margin-bottom: 0 !important;
+   
+
 }
 
 ul.right li {
@@ -332,6 +336,7 @@ hr {
 .collapsible {
     border: none;
     margin: none;
+    box-shadow: none;
 }
 .collapsible-body {
     padding: 0;
