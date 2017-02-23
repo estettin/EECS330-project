@@ -273,8 +273,8 @@ h6 {
 }
 
 hr {
-    /* margin-bottom: 2em; */
-    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-top: 1em;
 }
 
 .color-key {
@@ -348,4 +348,18 @@ hr {
    border: none;
    margin: none;
 }
+
+.secondary-content i {
+    color: black;
+}
+
+.collection .collection-item a.class-link {
+    color: black !important;
+}
+
+.collection .collection-item a.class-link:hover {
+    text-decoration: underline !important;
+}
+
+
 
