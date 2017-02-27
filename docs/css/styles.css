@@ -74,7 +74,7 @@ a {
     margin-left: -181.5px;
 }
 h6 {
-    font-size: 18px;
+    font-size: 18px !important;
 }
 /*
 .circle span {
