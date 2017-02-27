@@ -309,6 +309,8 @@ hr {
     height: 400px;
 /*     border: 1px solid lightgray; */
 /*     background-color: #222222; */
+    background: -webkit-linear-gradient(to left, #6441A5, #2a0845);
+    background: linear-gradient(to left, #6441A5, #2a0845);
 }
 .div-tooltip {
     color: red;
