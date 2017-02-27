@@ -25,6 +25,7 @@ h3.initial {
 }
 .brand-logo{
     font-family: 'Lobster', cursive !important;
+    font-size: 18px;
 }
 h1.initial {
     text-align: center;
@@ -312,6 +313,7 @@ hr {
     top: -.25em;
     position: relative;
     font-family: 'Lobster', cursive !important;
+    font-size: 10px;
 
 }
 
