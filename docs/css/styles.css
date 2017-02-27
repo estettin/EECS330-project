@@ -311,6 +311,7 @@ hr {
     display: inline-block;
     top: -.25em;
     position: relative;
+    font-family: 'Lobster', cursive !important;
 
 }
 
