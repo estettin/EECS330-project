@@ -1,392 +1,259 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <title>Dashboard</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="js/materialize.js"></script>
-        <script src="js/main.js"></script>
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link href="css/materialize.css" rel="stylesheet">
-        <!-- Custom styles for this template -->
-        <link href="css/styles.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    </head>
-    <body>
-        <nav>
-            <div class="nav-wrapper">
-                <a href="index.html" class="brand-logo left">Advisor</a>
-                <a href="#" data-activates="mobile-demo" class="right button-collapse"><i class="fa fa-bars"></i></a>
-                <ul class="right hide-on-small-and-down">
-                    <li id="navsearch">
-                        <form class="nav-search">
-                            <label class="search-label" for="search"><i class="fa fa-search"></i></label>
-                            <input id="search" type="search" placeholder="search courses">
-                        </form>
-                    </li>
-                    <li><a href="dashboard.html">Dashboard</a></li>
-                    <li><a href="prereqs.html">Prerequisites</a></li>
-                    <li><a href="#">Logout</a></li>
-                </ul>
-                <ul class="side-nav" id="mobile-demo">
-                    <li><a href="dashboard.html">Dashboard</a></li>
-                    <li><a href="prereqs.html">Prerequisites</a></li>
-                    <li><a href="mobile.html">Logout</a></li>
-                </ul>
-            </div>
-        </nav>
-        <br>
-        <div class="container">
-            <div class="row">
-                <div class="col s12">
-                    <h2><b>Computer Science, B.S.</b></h2>
-                </div>
-                <div class="col s9">
-                    <div class="progress">
-                        <div class="progress">
-                            <div class="progress-bar blue darken-2" style="width: 41.67%" title="20 Credits Completed">
-                            </div>
-                            <div class="progress-bar blue lighten-4" style="width: 8.33%" title="4 Credits in Progress">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s3">
-                    <h6>24/48 Credits  <i class="fa fa-graduation-cap"></i></h6>
-                </div>
-                <div class="col s12">
-                    <div class="color-key">
-                        <div class="key blue darken-2"></div>
-                        <div class="key-label">Complete</div>
-                        <div class="key blue lighten-4"></div>
-                        <div class="key-label">In Progress</div>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <h3>Degree Requirements</h3>
-            <h6>Click the progress bars for more information.<br><br></h6>
-            <div class="row no-margin-bottom">
-                <div class="col s12">
-                    <h5>Math</h5>
-                    <ul class="collapsible" data-collapsible="expandable">
-                        <li><div class="collapsible-header">
-                            <div class="row row-eq-height">
-                                <div class="col s9 vcenter">
-                                    <div class="progress">
-                                        <div class="progress-bar full blue darken-2" style="width: 100%"">
-                                            <span class="sr-only">4 Credits Complete</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col s3 vcenter">
-                                    <h6>4/4 Credits</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="collapsible-body">
-                            <ul class="collection">
-                                <li class="collection-item green-text">Math 220</li>
-                                <li class="collection-item green-text">Math 224</li>
-                                <li class="collection-item green-text">Math 230</li>
-                                <li class="collection-item green-text">EECS 212</li>
-                            </ul>
-                        </div></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row no-margin-bottom">
-                <div class="col s12">
-                    <h5>Engineering Analysis</h5>
-                    <ul class="collapsible" data-collapsible="expandable">
-                        <li><div class="collapsible-header">
-                            <div class="row row-eq-height">
-                                <div class="col s9 vcenter">
-                                    <div class="progress">
-                                        <div class="progress-bar full blue darken-2" style="width: 100%">
-                                            <span class="sr-only">4 Credits Complete</span>
-                                        </div>
 
-                                    </div>
-                                </div>
-                                <div class="col s3 vcenter">
-                                    <h6>4/4 Credits</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="collapsible-body">
-                            <ul class="collection">
-                                <li class="collection-item green-text">EA1</li>
-                                <li class="collection-item green-text">EA2</li>
-                                <li class="collection-item green-text">EA3</li>
-                                <li class="collection-item green-text">EECS111</li>
-                            </ul>
-                        </div></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row no-margin-bottom">
-                <div class="col s12">
-                    <h5>Basic Science</h5>
-                    <ul class="collapsible" data-collapsible="expandable">
-                        <li><div class="collapsible-header">
-                            <div class="row row-eq-height">
-                                <div class="col s9 vcenter">
-                                    <div class="progress">
-                                        <div class="progress-bar blue lighten-4" style="width: 25%" title="Physics 135-2">
-                                            <span class="sr-only">1 Credits Complete</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col s3 vcenter">
-                                    <h6>1/4 Credits</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="collapsible-body">
-                            <ul class="collection">
-                                <li class="collection-item yellow-text">Physics 135-2</li>
-                                <li class="collection-item"><a class="blue-text" href='basic-science.html'>See More</a>
-                            </li>
-                        </ul>
-                    </div></li>
-                </ul>
-            </div>
-        </div>
-        <div class="row no-margin-bottom">
-            <div class="col s12">
-                <h5>Design and Communication</h5>
-                <ul class="collapsible" data-collapsible="expandable">
-                    <li><div class="collapsible-header">
-                        <div class="row row-eq-height">
-                            <div class="col s9 vcenter">
-                                <div class="progress">
-                                    <div class="progress-bar full blue darken-2" style="width: 100%">
-                                        <span class="sr-only">3 Credits Complete</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col s3 vcenter">
-                                <h6>3/3 Credits</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="collapsible-body">
-                        <ul class="collection">
-                            <li class="collection-item green-text">DTC 1</li>
-                            <li class="collection-item green-text">DTC 2</li>
-                            <li class="collection-item green-text">Public Speaking</li>
-                        </li>
-                    </ul>
-                </div></li>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Dashboard</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/materialize.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo left">Advisor</a>
+            <a href="#" data-activates="mobile-demo" class="right button-collapse"><i class="fa fa-bars"></i></a>
+            <ul class="right hide-on-small-and-down">
+                <li id="navsearch">
+                    <form class="nav-search">
+                        <label class="search-label" for="search"><i class="fa fa-search"></i></label>
+                        <input id="search" type="search" placeholder="search courses">
+                    </form>
+                </li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="prereqs.html">Prerequisites</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="prereqs.html">Prerequisites</a></li>
+                <li><a href="mobile.html">Logout</a></li>
             </ul>
         </div>
-    </div>
-    <div class="row no-margin-bottom">
-        <div class="col s12">
-            <h5>Basic Engineering</h5>
-            <ul class="collapsible" data-collapsible="expandable">
-                <li><div class="collapsible-header">
-                    <div class="row row-eq-height">
-                        <div class="col s9 vcenter">
-                            <div class="progress">
-                                <div class="progress-bar blue darken-2" style="width: 60%">
-                                    <span class="sr-only">3 Credits Complete</span>
-                                </div>
-                            </div>
+    </nav>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h2><b>Computer Science, B.S.</b></h2>
+            </div>
+            <div class="col s9">
+                <div class="progress">
+                    <div class="progress">
+                        <div class="progress-bar blue darken-2" style="width: 41.67%" title="20 Credits Completed">
                         </div>
-                        <div class="col s3 vcenter">
-                        <h6>3/5 Credits</h6></div>
-                    </div>
-                </div>
-                <div class="collapsible-body">
-                    <ul class="collection">
-                        <li class="collection-item green-text">EECS 211</li>
-                        <li class="collection-item green-text">IEMS 326</li>
-                        <li class="collection-item green-text">EECS 203</li>
-                        <li class="collection-item"><a class="blue-text" href='basic-science.html'>See More</a>
-                    </li>
-                </ul>
-            </div></li>
-        </ul>
-    </div>
-</div>
-<div class="row no-margin-bottom">
-    <div class="col s12">
-        <h5>CS Major Requirements</h5>
-        <ul class="collapsible" data-collapsible="expandable">
-                <li><div class="collapsible-header">
-        <div class="row row-eq-height">
-            <div class="col s9 vcenter">
-                <div class="progress">
-                    <div class="progress-bar blue darken-2" style="width: 66.66%">
-                        <span class="sr-only">2 Credits Complete</span>
+                        <div class="progress-bar blue lighten-4" style="width: 8.33%" title="4 Credits in Progress">
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col s3 vcenter">
-                <h6>2/3 Credits</h6>
+            <div class="col s3">
+                <h6>24/48 Credits  <i class="fa fa-graduation-cap"></i></h6>
+            </div>
+            <div class="col s12">
+                <div class="color-key">
+                    <div class="key blue darken-2"></div>
+                    <div class="key-label">Complete</div>
+                    <div class="key blue lighten-4"></div>
+                    <div class="key-label">In Progress</div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="collapsible-body">
-                    <ul class="collection">
-                        <li class="collection-item green-text">EECS 213</li>
-                        <li class="collection-item green-text">EECS 214</li>
-                        <li class="collection-item"><a class="blue-text" href='basic-science.html'>See More</a>
-                    </li>
-                </ul>
-            </div></li>
-        </ul>
-    </div>
+        <hr>
+        <h3>Degree Requirements</h3>
+        <h6>Click the progress bars for more information.<br><br></h6>
+        <div class="row no-margin-bottom">
+            <div class="col s12">
+                <h5>Math</h5>
+                <ul class="collapsible" data-collapsible="expandable">
+                    <li>
+                        <div class="collapsible-header">
+                            <div class="row row-eq-height">
+                                <i class="fa fa-angle-down"></i>
+                                <div class="col s9 vcenter">
+                                    <div class="progress">
+                                        <div class="progress-bar full blue darken-2" style="width: 100%" ">
+												<span class="sr-only ">4 Credits Complete</span>
+											</div>
+										</div>
+									</div>
+									<div class="col s3 vcenter ">
+										<h6>4/4 Credits</h6>
+									</div>
+								</div>
+							</div>
+							<div class="collapsible-body ">
+								<ul class="collection ">
+									<li class="collection-item green-text ">Math 220</li>
+									<li class="collection-item green-text ">Math 224</li>
+									<li class="collection-item green-text ">Math 230</li>
+									<li class="collection-item green-text ">EECS 212</li>
+								</ul>
+							</div></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row no-margin-bottom ">
+					<div class="col s12 ">
+						<h5>Engineering Analysis</h5>
+						<ul class="collapsible " data-collapsible="expandable ">
+							<li><div class="collapsible-header ">
+								<div class="row row-eq-height ">
+									<i class="fa fa-angle-down "></i>
+									<div class="col s9 vcenter ">
+										<div class="progress ">
+											<div class="progress-bar full blue darken-2 " style="width: 100% ">
+												<span class="sr-only ">4 Credits Complete</span>
+											</div>
+										</div>
+									</div>
+									<div class="col s3 vcenter ">
+										<h6>4/4 Credits</h6>
+									</div>
+								</div>
+							</div>
+							<div class="collapsible-body ">
+								<ul class="collection ">
+									<li class="collection-item green-text ">EA1</li>
+									<li class="collection-item green-text ">EA2</li>
+									<li class="collection-item green-text ">EA3</li>
+									<li class="collection-item green-text ">EECS111</li>
+								</ul>
+							</div></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row no-margin-bottom ">
+					<div class="col s12 ">
+						<h5>Basic Science</h5>
+						<ul class="collapsible " data-collapsible="expandable ">
+							<li><div class="collapsible-header ">
+								<div class="row row-eq-height ">
+									<i class="fa fa-angle-down "></i>
+									<div class="col s9 vcenter ">
+										<div class="progress ">
+											<div class="progress-bar blue lighten-4 " style="width: 25% " title="Physics 135-2 ">
+												<span class="sr-only ">1 Credits Complete</span>
+											</div>
+										</div>
+									</div>
+									<div class="col s3 vcenter ">
+										<h6>1/4 Credits</h6>
+									</div>
+								</div>
+							</div>
+							<div class="collapsible-body ">
+								<ul class="collection ">
+									<li class="collection-item yellow-text ">Physics 135-2</li>
+									<li class="collection-item "><a class="blue-text " href='basic-science.html'>See More</a>
+								</li>
+							</ul>
+						</div></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row no-margin-bottom ">
+				<div class="col s12 ">
+					<h5>Design and Communication</h5>
+					<ul class="collapsible " data-collapsible="expandable ">
+						<li><div class="collapsible-header ">
+							<div class="row row-eq-height ">
+								<i class="fa fa-angle-down "></i>
+								<div class="col s9 vcenter ">
+									<div class="progress ">
+										<div class="progress-bar full blue darken-2 " style="width: 100% ">
+											<span class="sr-only ">3 Credits Complete</span>
+										</div>
+									</div>
+								</div>
+								<div class="col s3 vcenter ">
+									<h6>3/3 Credits</h6>
+								</div>
+							</div>
+						</div>
+						<div class="collapsible-body ">
+							<ul class="collection ">
+								<li class="collection-item green-text ">DTC 1</li>
+								<li class="collection-item green-text ">DTC 2</li>
+								<li class="collection-item green-text ">Public Speaking</li>
+							</li>
+						</ul>
+					</div></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row no-margin-bottom ">
+			<div class="col s12 ">
+				<h5>Basic Engineering</h5>
+				<ul class="collapsible " data-collapsible="expandable ">
+					<li><div class="collapsible-header ">
+						<div class="row row-eq-height ">
+							<i class="fa fa-angle-down "></i>
+							<div class="col s9 vcenter ">
+								<div class="progress ">
+									<div class="progress-bar blue darken-2 " style="width: 60% ">
+										<span class="sr-only ">3 Credits Complete</span>
+									</div>
+								</div>
+							</div>
+							<div class="col s3 vcenter ">
+							<h6>3/5 Credits</h6></div>
+						</div>
+					</div>
+					<div class="collapsible-body ">
+						<ul class="collection ">
+							<li class="collection-item green-text ">EECS 211</li>
+							<li class="collection-item green-text ">IEMS 326</li>
+							<li class="collection-item green-text ">EECS 203</li>
+							<li class="collection-item "><a class="blue-text " href='basic-science.html'>See More</a>
+						</li>
+					</ul>
+				</div></li>
+			</ul>
+		</div>
+	</div>
+	<div class="row no-margin-bottom ">
+		<div class="col s12 ">
+			<h5>CS Major Requirements</h5>
+			<ul class="collapsible " data-collapsible="expandable ">
+				<li>
+				<div class="collapsible-header ">
+					<div class="row row-eq-height ">
+						<i class="fa fa-angle-down "></i>
+						<div class="col s9 vcenter ">
+							<div class="progress ">
+								<div class="progress-bar blue darken-2 " style="width: 66.66% ">
+									<span class="sr-only ">2 Credits Complete</span>
+								</div>
+							</div>
+						</div>
+						<div class="col s3 vcenter ">
+							<h6>2/3 Credits</h6>
+						</div>
+					</div>
+				</div>
+				<div class="collapsible-body ">
+					<ul class="collection ">
+						<li class="collection-item green-text ">EECS 213</li>
+						<li class="collection-item green-text ">EECS 214</li>
+						<li class="collection-item "><a class="blue-text " href='basic-science.html'>See More</a>
+					</li>
+				</ul>
+			</div>
+			</li>
+		</ul>
+	</div>
 </div>
-<!-- <div class="row no-margin-bottom">
-    <div class="col s12">
-        <h5>CS Breadth</h5>
-        <ul class="collapsible" data-collapsible="expandable">
-                <li><div class="collapsible-header">
-        <div class="row row-eq-height">
-            <div class="col s9 vcenter">
-                <div class="progress">
-                    <div class="progress-bar blue darken-2" style="width: 20%" title="EECS 348">
-                        <span class="sr-only">1 Credit Complete</span>
-                    </div>
-                    <div class="progress-bar blue lighten-4" style="width: 20%" title="EECS 330">
-                        <span class="sr-only">1 Credit in Progress</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col s3 vcenter">
-                <h6>2/5 Credits</h6>
-            </div>
-        </div>
-    </div>
-    <div class="collapsible-body">
-                    <ul class="collection">
-                        <li class="collection-item green-text">EECS 348</li>
-                        <li class="collection-item yellow-text">EECS 330</li>
-                        <li class="collection-item"><a class="blue-text" href='#'>See More</a>
-                    </li>
-                </ul>
-            </div></li>
-        </ul>
-    </div>
-</div>
-<div class="row no-margin-bottom">
-    <div class="col s12">
-        <h5>CS Depth</h5>
-         <ul class="collapsible" data-collapsible="expandable">
-                <li><div class="collapsible-header">
-        <div class="row row-eq-height">
-            <div class="col s9 vcenter">
-                <div class="progress">
-                    <div class="progress-bar blue darken-2" style="width: 0%" title="">
-                        <span class="sr-only">0 Credits Complete</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col s3 vcenter">
-                <h6>0/5 Credits</h6>
-            </div>
-        </div>
-    </div>
-    <div class="collapsible-body">
-                    <ul class="collection">
-                        <li class="collection-item"><a class="blue-text" href='#'>Link to possible classes that can fulfill this requirement</a>
-                    </li>
-                </ul>
-            </div></li>
-        </ul>
-    </div>
-</div>
-<div class="row no-margin-bottom">
-    <div class="col s12">
-        <h5>CS Project Requirement</h5>
-         <ul class="collapsible" data-collapsible="expandable">
-                <li><div class="collapsible-header">
-        <div class="row row-eq-height">
-            <div class="col s9 vcenter">
-                <div class="progress">
-                    <div class="progress-bar blue darken-2" style="width: 0%" title="">
-                        <span class="sr-only">0 Credits Complete</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col s3 vcenter">
-                <h6>0/2 Credits</h6>
-            </div>
-        </div>
-    </div>
-    <div class="collapsible-body">
-                    <ul class="collection">
-                        <li class="collection-item"><a class="blue-text" href='#'>Link to possible classes that can fulfill this requirement</a>
-                    </li>
-                </ul>
-            </div></li>
-        </ul>
-    </div>
-</div>
-<div class="row no-margin-bottom">
-    <div class="col s12">
-        <h5>Theme</h5>
-         <ul class="collapsible" data-collapsible="expandable">
-                <li><div class="collapsible-header">
-        <div class="row row-eq-height">
-            <div class="col s9 vcenter">
-                <div class="progress">
-                    <div class="progress-bar blue darken-2" style="width: 0%" title="">
-                        <span class="sr-only">0 Credits Complete</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col s3 vcenter">
-                <h6>0/7 Credits</h6>
-            </div>
-        </div>
-    </div>
-    <div class="collapsible-body">
-                    <ul class="collection">
-                        <li class="collection-item"><a class="blue-text" href='#'>Link to possible classes that can fulfill this requirement</a>
-                    </li>
-                </ul>
-            </div></li>
-        </ul>
-    </div>
-</div>
-<div class="row no-margin-bottom">
-    <div class="col s12">
-        <h5>Unrestricted</h5>
-         <ul class="collapsible" data-collapsible="expandable">
-                <li><div class="collapsible-header">
-        <div class="row row-eq-height">
-            <div class="col s9 vcenter">
-                <div class="progress">
-                    <div class="progress-bar blue darken-2" style="width: 40%" title="ART 125, EECS 1XX">
-                        <span class="sr-only">2 Credits Complete</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col s3 vcenter">
-                <h6>2/5 Credits</h6>
-            </div>
-        </div>
-    </div>
-    <div class="collapsible-body">
-                    <ul class="collection">
-                        <li class="collection-item green-text">ART 125</li>
-                        <li class="collection-item green-text">EECS 1XX</li>
-                        <li class="collection-item"><a class="blue-text" href='#'>Link to possible classes that can fulfill this requirement</a>
-                    </li>
-                </ul>
-            </div></li>
-        </ul>
-    </div>
-</div>
-</div> -->
 </body>
 </html>
